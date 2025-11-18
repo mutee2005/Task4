@@ -1,0 +1,69 @@
+/* -------- DESKTOP STYLES -------- */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 20px;
+}
+
+.left, .right {
+  width: 48%;
+  padding: 20px;
+  background: #f2f2f2;
+  border-radius: 8px;
+}
+
+.big-img {
+  width: 600px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+
+
+/* -------- MOBILE STYLES -------- */
+@media (max-width: 768px) {
+
+  /* Navigation becomes vertical */
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  /* Columns stack vertically */
+  .container {
+    flex-direction: column;
+  }
+
+  .left, .right {
+    width: 100%;
+  }
+
+  /* Body font reduces */
+  body {
+    font-size: 16px;
+  }
+
+  /* Image becomes responsive */
+  .big-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
